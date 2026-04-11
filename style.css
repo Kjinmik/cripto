@@ -1,0 +1,64 @@
+:root {
+    --bg: #000;
+    --text: #0f0;
+    --border: #0f0;
+}
+
+.light-theme {
+    --bg: #f0f0f0;
+    --text: #111;
+    --border: #333;
+}
+
+body {
+    background-color: var(--bg);
+    color: var(--text);
+    font-family: 'Courier New', monospace;
+    display: flex;
+    justify-content: center;
+    padding: 40px 20px;
+    margin: 0;
+}
+
+.terminal {
+    border: 2px solid var(--border);
+    max-width: 700px;
+    width: 100%;
+    padding: 20px;
+    box-shadow: 10px 10px 0px var(--border);
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    border-bottom: 2px solid var(--border);
+    padding-bottom: 10px;
+}
+
+textarea, select, input, button {
+    background: transparent;
+    border: 2px solid var(--border);
+    color: var(--text);
+    font-family: inherit;
+    padding: 10px;
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 15px;
+    outline: none;
+}
+
+button:active {
+    background: var(--text);
+    color: var(--bg);
+}
+
+.result-box {
+    border: 1px solid var(--border);
+    padding: 15px;
+    min-height: 60px;
+    background: rgba(0, 255, 0, 0.05);
+    word-break: break-all;
+}
+
+

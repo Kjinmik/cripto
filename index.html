@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TERMINAL CRIPTO v2.0</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="dark-theme">
+    <div class="terminal">
+        <header>
+            <span class="status">● SYSTEM ACTIVE</span>
+            <button id="theme-toggle">ALTERAR_TEMA.exe</button>
+        </header>
+
+        <section class="content">
+            <div class="field">
+                <label>> INPUT_DATA:</label>
+                <textarea id="input-text" placeholder="Digite sua mensagem secreta..."></textarea>
+            </div>
+
+            <div class="controls">
+                <div class="select-wrapper">
+                    <label>ALGORITMO:</label>
+                    <select id="algo-select">
+                        <option value="cesar">CIFRA DE CÉSAR</option>
+                        <option value="vigenere">VIGENÈRE</option>
+                        <option value="base64">BASE64</option>
+                        <option value="morse">CÓDIGO MORSE</option>
+                        <option value="binario">BINÁRIO</option>
+                    </select>
+                </div>
+                
+                <div class="extra-params" id="vigenere-extra" style="display:none;">
+                    <label>CHAVE:</label>
+                    <input type="text" id="vigenere-key" placeholder="Palavra-chave">
+                </div>
+
+                <div class="buttons">
+                    <button onclick="executar(true)">[ ENCRIPTAR ]</button>
+                    <button onclick="executar(false)">[ DECRIPTAR ]</button>
+                </div>
+            </div>
+
+            <div class="field">
+                <label>> OUTPUT_DATA:</label>
+                <div id="output-text" class="result-box">Aguardando comando...</div>
+            </div>
+        </section>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
