@@ -1,4 +1,4 @@
-const CACHE = 'incode-4.0-v1';
+const CACHE = 'incode-4.0-v2';
 const ASSETS = ['./', './index.html', './manifest.json', './icon.svg'];
 
 self.addEventListener('install', e => {
