@@ -1,0 +1,16 @@
+{
+  "name": "INCODE 4.0 APP",
+  "short_name": "INCODE 4.0",
+  "description": "Ferramenta de criptografia com visual de terminal, funciona offline.",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "any",
+  "background_color": "#030804",
+  "theme_color": "#030804",
+  "lang": "pt-BR",
+  "icons": [
+    { "src": "icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any" },
+    { "src": "icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "maskable" }
+  ]
+}
