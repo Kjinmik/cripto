@@ -4,7 +4,6 @@ Ferramenta de criptografia com visual de terminal. Funciona offline e pode ser i
 
 **Acesse:**
 - Netlify: https://incode3.netlify.app
-- GitHub Pages: https://kjinmik.github.io/cripto/
 
 ## Estrutura
 
